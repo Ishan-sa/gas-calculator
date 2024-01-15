@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+
+    <title>Gas Calculator</title>
+  </head>
+  <body>
+    <div class="container">
+      <h1>Gas Calculator</h1>
+      <form id="gasCalculatorForm">
+        <div class="input-field">
+          <label for="gasCost">Gas Cost per Litre ($):</label>
+          <input type="number" id="gasCost" step="any" required />
+        </div>
+        <div class="input-field">
+          <label for="distanceDriven">Kilometers Driven (km):</label>
+          <input type="number" id="distanceDriven" step="any" required />
+        </div>
+        <div class="input-field">
+          <label for="carAverage">Car Average (L/100km):</label>
+          <input type="number" id="carAverage" step="any" required />
+        </div>
+        <button type="submit">Calculate</button>
+      </form>
+      <div id="result"></div>
+    </div>
+    <script src="script.js"></script>
+  </body>
+</html>
